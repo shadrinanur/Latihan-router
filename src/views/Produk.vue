@@ -27,7 +27,7 @@ export default {
       onMounted(() => {
           context.emit("id-menu", 4);
       });
-
+      
       return {
           state,
           getImgSrc

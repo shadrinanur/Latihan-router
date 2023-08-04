@@ -1,6 +1,12 @@
 <template>
-    <div class="flex-container">
-        <div v-for="produk in data" :key="produk.id" class="card">
+    <div v-if="data.length == 0">
+    <h1>Produk Tidak Tersedia</h1>
+    </div>
+    <div v-else>
+        <h1>Daftar Produk {{  categoryName }}</h1>
+    </div>
+    <div class="container">
+        <div v-for="produk in dataProduk" :key="produk.id" class="card">
             <img :src="getImgSrc(produk.img)" alt="Category Image" />
         <router-link class="container" :to="{ name : 'Detail', params:{id_produk : produk.id}}">
             <h4>{{ produk.nama }}</h4>

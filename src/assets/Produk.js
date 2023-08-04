@@ -54,7 +54,7 @@ export const produk = {
             'id' : 7,
             "nama" : "Skincare",
             "harga" : "5.000.000",
-            "id_kategori" : 3,
+            "id_kategori" : 34,
             "img" : "skincare.png",
             "keterangan" : "Skincare ini umumnya merupakan serangkaian perawatan kulit dari berbagai produk yang digunakan untuk menjaga kesehatan dan kecantikan kulit wajah."
         },
@@ -62,7 +62,7 @@ export const produk = {
             'id' : 8,
             "nama" : "Make up",
             "harga" : "5.000.000",
-            "id_kategori" : 3,
+            "id_kategori" : 34,
             "img" : "mekap.png",
             "keterangan" : "seni merias wajah atau mengubah bentuk asli dengan bantuan alat dan bahan kosmetik dengan tujuan untuk memperindah atau menutupi kekurangan sehingga wajah terlihat ideal."
         },
@@ -70,7 +70,7 @@ export const produk = {
             'id' : 9,
             "nama" : "Manicure",
             "harga" : "5.000.000",
-            "id_kategori" : 3,
+            "id_kategori" : 34,
             "img" : "nail.png",
             "keterangan" : " serangkaian perawatan yang bertujuan untuk membersihkan dan mempercantik kuku jari tangan dan kulit di sekitarnya"
         },

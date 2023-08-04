@@ -8,7 +8,9 @@ import Detail from "@/views/Detail.vue";
 import Produk from "@/views/Produk.vue";
 import Kategori from "@/views/Kategori.vue";
 import KategoriProduk from "@/views/KategoriProduk.vue";
+
 import NotFound from "@/views/NotFound.vue";
+import Login from "@/views/Login.vue";
 
 const routes = [ 
   {
@@ -27,9 +29,23 @@ const routes = [
     component: Contact,
   },
   {
+    path: "/login",
+    name: "Login",
+    component: Login,
+    props: true,
+  },
+  {
     path: "/produk",
     name: "Produk",
     component: Produk,
+    beforeEnter: (to, from, next) => {
+      const loggedInUser = true;
+      if (loggedInUser) {
+        next(); //Lanjutkan navigasi ke halaman produk jika belum login
+      } else {
+        next("/login"); //Alihkan ke halaman login jika belum login
+      }
+    },
   },
   {
     path: "/kategori",
